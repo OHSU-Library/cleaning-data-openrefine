@@ -11,10 +11,10 @@
 carpentry: 'dc'
 
 # Overall title for pages.
-title: 'Data Cleaning with OpenRefine for Ecologists'
+title: 'Cleaning Data with OpenRefine'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: '2015-04-04'
+created: '2023-10-25'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
@@ -27,13 +27,13 @@ life_cycle: 'stable'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/datacarpentry/OpenRefine-ecology-lesson'
+source: 'https://github.com/OHSU-Library/cleaning-data-openrefine'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'library@ohsu.libanswers.com'
 
 # Navigation ------------------------------------------------
 #
@@ -64,11 +64,9 @@ episodes:
 - 03-exploring-data.md
 - 04-transforming-data.md
 - 05-filter-exclude-sort.md
-- 06-reconciliation.md
-- 07-looking-up-data.md
-- 08-exporting-cleaning-steps.md
-- 09-exporting-data.md
-- 10-resources.md
+- 06-exporting-cleaning-steps.md
+- 07-exporting-data.md
+- 08-resources.md
 
 # Information for Learners
 learners: 
@@ -85,6 +83,6 @@ profiles:
 # sandpaper and varnish versions) should live
 
 
-url: 'https://datacarpentry.github.io/OpenRefine-ecology-lesson'
+url: 'https://github.com/OHSU-Library/cleaning-data-openrefine'
 analytics: carpentries
 lang: en
