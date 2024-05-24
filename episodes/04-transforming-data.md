@@ -27,14 +27,12 @@ We can split data from one column into multiple columns if the parts are separat
 2. Click the down arrow next to the `scientificName` column. Choose `Edit Column` > `Split into several columns...`
 3. In the pop-up, in the `Separator` box, replace the comma with a space (the box will look empty when you're done).
 4. Important! Uncheck the box that says `Remove this column`.
-5. Click `OK`. You should get some new columns called `scientificName 1`, `scientificName 2`, `scientificName 3`, and `scientificName 4`.
+5. Click `OK`. You should get some new columns called `scientificName 1`, `scientificName 2`, `scientificName 3`, `scientificName 4`, `scientificName 5`, and `scientificName 6`.
 6. Notice that in some cases these newly created columns are empty (you can check by text faceting the column). Why? What do you think we can do to fix it?
 
-The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns had an extra space at the beginning of the entry. Leading and trailing white spaces are very difficult to notice when cleaning data
-manually. This is another advantage of using OpenRefine to clean your data - this process can be automated.
+The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns had an extra space at the beginning of the entry. Leading and trailing white spaces are very difficult to notice when cleaning data manually. This is another advantage of using OpenRefine to clean your data - this process can be automated.
 
-In newer versions of OpenRefine (from version 3.4.1) there is now an option to
-clean leading and trailing white spaces from all data when importing the data initially and creating the project.
+As noted in the Importing Data episode, there is an option to clean leading and trailing white spaces from all data when importing the data initially and creating the project.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -131,6 +129,28 @@ Try to change the name of the `scientificName 2` column to `species`. What probl
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Edit the name of the `species` column to `species_abbreviation`. Then, rename `scientificName 2` to `species`.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Practice splitting columns
+
+## Exercise
+
+Look at the data in the column `coordinates` and split these values to obtain latitude and longitude. Make sure that the option for `Guess cell type` is checked and that `Remove this column` is not. Rename the new columns.
+
+What type of data does OpenRefine assign to the new colunms?
+
+:::::::::::::::  solution
+
+## Solution
+
+Both new columns will appear with green text, indicating they are numeric. The option for `Guess cell type` allowed OpenRefine to guess that these values were numeric.
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Combining columns to create new ones
 
