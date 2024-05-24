@@ -186,6 +186,7 @@
 <li><a href="#undoing-redoing-actions">Undoing / Redoing actions</a></li>
 <li><a href="#trimming-leading-and-trailing-whitespace">Trimming leading and trailing whitespace</a></li>
 <li><a href="#renaming-columns">Renaming columns</a></li>
+<li><a href="#practice-splitting-columns">Practice splitting columns</a></li>
 <li><a href="#combining-columns-to-create-new-ones">Combining columns to create new ones</a></li>
 <li><a href="#data-clustering">Data clustering</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -409,7 +410,7 @@ after trimming the whitespace.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>On the <code>scientificName</code> column, click the down arrow next
 to the <code>scientificName</code> column and choose
@@ -450,7 +451,7 @@ problem?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>On the <code>scientificName 2</code> column, click the down arrow
 and then <code>Edit column</code> &gt;
@@ -470,6 +471,9 @@ change the name of the <code>species</code> column and then rename the
 <p>Edit the name of the <code>species</code> column to
 <code>species_abbreviation</code>. Then, rename
 <code>scientificName 2</code> to <code>species</code>.</p>
+</section><section id="practice-splitting-columns"><h2 class="section-heading">Practice splitting columns<a class="anchor" aria-label="anchor" href="#practice-splitting-columns"></a>
+</h2>
+<hr class="half-width"><p>Let’s try splitting a column on a different character.</p>
 <div id="exercise-2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -491,7 +495,7 @@ for <code>Guess cell type</code> is checked and that
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Both new columns will appear with green text, indicating they are
 numeric. The option for <code>Guess cell type</code> allowed OpenRefine
