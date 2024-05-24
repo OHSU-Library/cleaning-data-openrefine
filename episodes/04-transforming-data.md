@@ -110,9 +110,11 @@ Try to change the name of the `scientificName 2` column to `species`. What probl
 
 Edit the name of the `species` column to `species_abbreviation`. Then, rename `scientificName 2` to `species`.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
 ## Practice splitting columns
+
+Let's try splitting a column on a different character.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Exercise
 
