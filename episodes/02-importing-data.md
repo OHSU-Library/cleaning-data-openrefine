@@ -41,7 +41,7 @@ See the [Create a project by importing data](https://docs.openrefine.org/manual/
 
 ## Create your first OpenRefine project (using provided data)
 
-Start OpenRefine, which will open in your browser (at the address [http://127.0.0.0:3333](https://127.0.0.0:3333)). Once OpenRefine is launched in your
+Start OpenRefine, which will open in your browser (at the address [http://127.0.0.1:3333](https://127.0.0.1:3333)). Once OpenRefine is launched in your
 browser, the left margin has options to:
 
 - `Create Project`
