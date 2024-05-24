@@ -41,8 +41,6 @@ exercises: 0
 - Some concepts such as clustering algorithms are quite complex, but with OpenRefine
   we can introduce them, use them, and show their power.
   
-  > **Note:** You must export your modified dataset to a new file: OpenRefine does not save over the original source file. All changes are stored in the OpenRefine project.
-
 ## Before we get started
 
 The following setup is necessary before we can get started (see the [instructions here](../learners/setup.md).)
@@ -50,7 +48,7 @@ The following setup is necessary before we can get started (see the [instruction
 ## What is OpenRefine?
 
 - OpenRefine is a Java program that runs on your machine (not in the cloud): it is a desktop application that uses your web browser as a graphical interface. No internet connection is needed, and none of the data or commands you enter in OpenRefine are sent to a remote server.
-- OpenRefine does not modify your original dataset. All actions can be reversed in OpenRefine and you can capture all the actions applied to your data and share this documentation with your publication as supplemental material.
+- OpenRefine does not modify your original dataset, all changes are stored in the OpenRefine project and modified data must be exported to a new file. All actions can be reversed in OpenRefine and you can capture all the actions applied to your data and share this documentation with your publication as supplemental material.
 - OpenRefine saves as you go. You can return to the project at any time to pick up where you left off or export your data to a new file.
 - OpenRefine can be used to standardise and clean data across your file.
 
