@@ -901,7 +901,7 @@ Faceting</a></p>
 </div>
 </section></section><section id="aio-04-transforming-data"><p>Content from <a href="04-transforming-data.html">Transforming Data</a></p>
 <hr>
-<p>Last updated on 2024-05-23 |
+<p>Last updated on 2024-05-24 |
         
         <a href="https://github.com/OHSU-Library/cleaning-data-openrefine/edit/main/episodes/04-transforming-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -954,7 +954,8 @@ with a space (the box will look empty when you’re done).</li>
 <code>Remove this column</code>.</li>
 <li>Click <code>OK</code>. You should get some new columns called
 <code>scientificName 1</code>, <code>scientificName 2</code>,
-<code>scientificName 3</code>, and <code>scientificName 4</code>.</li>
+<code>scientificName 3</code>, <code>scientificName 4</code>,
+<code>scientificName 5</code>, and <code>scientificName 6</code>.</li>
 <li>Notice that in some cases these newly created columns are empty (you
 can check by text faceting the column). Why? What do you think we can do
 to fix it?</li>
@@ -965,39 +966,9 @@ to fix it?</li>
 of the entry. Leading and trailing white spaces are very difficult to
 notice when cleaning data manually. This is another advantage of using
 OpenRefine to clean your data - this process can be automated.</p>
-<p>In newer versions of OpenRefine (from version 3.4.1) there is now an
-option to clean leading and trailing white spaces from all data when
-importing the data initially and creating the project.</p>
-<div id="exercise" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
-</h3>
-<div class="callout-content">
-<p>Look at the data in the column <code>coordinates</code> and split
-these values to obtain latitude and longitude. Make sure that the option
-for <code>Guess cell type</code> is checked and that
-<code>Remove this column</code> is not. Rename the new columns.</p>
-<p>What type of data does OpenRefine assign to the new colunms?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<p>Both new columns will appear with green text, indicating they are
-numeric. The option for <code>Guess cell type</code> allowed OpenRefine
-to guess that these values were numeric.</p>
-</div>
-</div>
-</div>
-</div>
+<p>As noted in the Importing Data episode, there is an option to clean
+leading and trailing white spaces from all data when importing the data
+initially and creating the project.</p>
 </section><section id="undoing-redoing-actions"><h2 class="section-heading">Undoing / Redoing actions<a class="anchor" aria-label="anchor" href="#undoing-redoing-actions"></a>
 </h2>
 <hr class="half-width">
@@ -1041,12 +1012,12 @@ them.</p>
 <code>Text transform on 2 cells</code>
 </li>
 </ol>
-<div id="exercise-1" class="callout challenge">
+<div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
 </h3>
 <div class="callout-content">
 <p>Repeat the splitting of column <code>scientificName</code> exercise
@@ -1054,12 +1025,12 @@ after trimming the whitespace.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>On the <code>scientificName</code> column, click the down arrow next
 to the <code>scientificName</code> column and choose
@@ -1084,12 +1055,12 @@ column, click the down arrow and then <code>Edit column</code> &gt;
 <code>Rename this column</code>.</li>
 <li>Type “genus” into the box that appears.</li>
 </ol>
-<div id="exercise-2" class="callout challenge">
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-2" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-2"></a>
+<div id="exercise-1" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <p>Try to change the name of the <code>scientificName 2</code> column to
@@ -1098,12 +1069,12 @@ problem?</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>On the <code>scientificName 2</code> column, click the down arrow
@@ -1125,6 +1096,36 @@ change the name of the <code>species</code> column and then rename the
 <p>Edit the name of the <code>species</code> column to
 <code>species_abbreviation</code>. Then, rename
 <code>scientificName 2</code> to <code>species</code>.</p>
+<div id="exercise-2" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-2" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-2"></a>
+</h3>
+<div class="callout-content">
+<p>Look at the data in the column <code>coordinates</code> and split
+these values to obtain latitude and longitude. Make sure that the option
+for <code>Guess cell type</code> is checked and that
+<code>Remove this column</code> is not. Rename the new columns.</p>
+<p>What type of data does OpenRefine assign to the new colunms?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>Both new columns will appear with green text, indicating they are
+numeric. The option for <code>Guess cell type</code> allowed OpenRefine
+to guess that these values were numeric.</p>
+</div>
+</div>
+</div>
+</div>
 </section><section id="combining-columns-to-create-new-ones"><h2 class="section-heading">Combining columns to create new ones<a class="anchor" aria-label="anchor" href="#combining-columns-to-create-new-ones"></a>
 </h2>
 <hr class="half-width">
@@ -1344,7 +1345,7 @@ selected?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Do <code>Facet</code> &gt; <code>Text facet</code> on the
@@ -1420,7 +1421,7 @@ will then appear for you to fine-tune your sorting.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>In the <code>mo</code> column, select <code>Sort...</code> &gt;
 <code>numbers</code> and select <code>smallest first</code>. The months
@@ -1465,7 +1466,7 @@ recorded for plot 1 in this filtered dataset?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>In the <code>plot</code> column, select <code>Sort...</code> &gt;
 <code>numbers</code> and select <code>smallest first</code>. The years
@@ -1505,7 +1506,7 @@ all of your entries in chronological order?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>For the <code>mo</code> column, click on <code>Sort...</code> and
